@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.carolina.forecast.ForeCast"
+    tools:showIn="@layout/app_bar_fore_cast"
+    android:background="@drawable/layout_color">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/addActualLocation"
+        android:layout_alignEnd="@+id/addActualLocation"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="32dp">
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ForeCast"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="118dp"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/location"
+        android:layout_alignStart="@+id/location" />
+
+    <Button
+        android:id="@+id/addActualLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTUAL LOCATION"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="301dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignTop="@+id/addLocation"
+        android:layout_centerHorizontal="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/red_button"/>
+
+    <Button
+        android:id="@+id/addLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add location"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="301dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/forecast"
+        android:layout_centerHorizontal="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/red_button"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter your location..."
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addActualLocation"
+        android:layout_marginTop="30dp"
+        android:id="@+id/fragmentList"
+        android:name="com.example.carolina.forecast.fragment.Location_fragment"
+        tools:layout="@layout/fragment_list_of_places"/>
+
+
+
+</RelativeLayout>

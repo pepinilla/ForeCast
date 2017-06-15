@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ForeCast</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="humidity">Humidity</string>
+    <string name="pressure">Pressure</string>
+    <string name="temp">Temperature</string>
+    <string name="temp_max">Temp max</string>
+    <string name="temp_min">Temp min</string>
+
+    <string name="action_about_me">About me</string>
+
+    <string name="main.email.body">I am sending you the forecast of today</string>
+    <string name="main.email.subject">ForeCast!</string>
+    <string name="main.email.chooser">Send ForeCast email...</string>
+</resources>

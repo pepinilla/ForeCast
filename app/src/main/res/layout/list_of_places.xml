@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailForeCast"
+    android:background="@drawable/layout_color">
+
+    <TextView
+        android:id="@+id/places_2ndactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:background="@drawable/layout_color"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/temperature"
+        style="@style/TempValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="TextView"
+        android:layout_below="@+id/places_2ndactivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:text="@string/humidity"
+        style="@style/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/pressure"
+        android:layout_toRightOf="@+id/temperature"
+        android:layout_toEndOf="@+id/temperature" />
+
+    <TextView
+        android:id="@+id/humidity"
+        style="@style/TempValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="TextView"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignTop="@+id/pressure" />
+
+    <TextView
+        android:id="@+id/pressure"
+        style="@style/TempValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="21dp"
+        tools:text="TextView"
+        android:layout_alignLeft="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temperature"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="47dp"
+        android:layout_toStartOf="@+id/temperature"
+        android:text="@string/pressure"
+        android:layout_toLeftOf="@+id/temperature"
+        android:layout_marginRight="22dp" />
+</RelativeLayout>
